@@ -235,7 +235,15 @@ input{
     }
 
     .dash{
-        display: none;
+        visibility: hidden;
+    }
+
+    #social img{
+        max-width: 30px;
+    }
+
+    #portfolioIMG img{
+    width:100%;
     }
 
 }
