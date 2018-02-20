@@ -227,11 +227,13 @@ input{
 /* Media Queries */
 @media (max-width: 479px) {
     .content{
-        width:70%;
+        width:90%;
+        margin:auto;
     }
 
     .content p{
         width:100%;
+        margin:auto;
     }
     
     #navbar ul li{
