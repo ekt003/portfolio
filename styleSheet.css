@@ -229,6 +229,10 @@ input{
     .content{
         width:70%;
     }
+
+    .content p{
+        width:100%;
+    }
     
     #navbar ul li{
         display: block;
@@ -239,7 +243,7 @@ input{
     }
 
     #social img{
-        max-width: 30px;
+        max-width: 35px;
     }
 
     #portfolioIMG img{
