@@ -189,18 +189,35 @@ input{
 #social img{
     max-width: 50px;
     border-radius: 600px;
-	border: 1px solid white;
+    border: 1px solid white;
 }
 
-#social li a:hover{
-    color: #87d8ea;
+#social img:hover{
+    opacity: 0.5;
 }
+
 
 #email p{
     padding:0px;
     width: 100%;
     margin:auto;
 }
+
+.mobileResume{
+    display:none;
+    background-color: #f2747d;
+    color:white;
+    font-family: 'Lato', sans-serif;
+    border:none;
+    font-size: 24px;
+    padding:5px 10px;
+}
+
+.mobileResume:hover{
+    background-color: #87d8ea;
+    color:white;
+}
+
 
 #submitButton{
     background-color: #f2747d;
@@ -226,18 +243,26 @@ input{
 
 /* Media Queries */
 @media (max-width: 479px) {
+    
+    #title h1{
+        font-size:60px;
+        margin-bottom: 10px;
+    }
+
+    #title h2{
+        display:none;
+    }
+
     .content{
-        width:90%;
-        margin:auto;
+        width:60%;
     }
 
     .content p{
         width:100%;
-        margin:auto;
     }
     
     #navbar ul li{
-        display: block;
+        display: none;
     }
 
     .dash{
@@ -245,11 +270,24 @@ input{
     }
 
     #social img{
-        max-width: 35px;
+        max-width: 75px;
+        width:20%;
+    }
+
+    #social li{
+        padding:2px;
     }
 
     #portfolioIMG img{
     width:100%;
+    }
+
+    .resume{
+        display: none;
+    }
+
+    .mobileResume{
+        display:block;
     }
 
 }

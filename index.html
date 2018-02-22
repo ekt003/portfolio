@@ -80,15 +80,12 @@
     <div class="content" id="project">
     </div>
 
-    
-
-    
-
     <!-- Resume Section of my Content -->
     <div class="content" id="resume">
         <h1>Resume</h1>
         <p>For privacy reasons, this version of my resume does not list my permanent residence or phone number. Please reach out if you are in need of omitted information.</p>
         <iframe class="resume" src="resume/etResumeWeb.pdf"></iframe>
+        <a href="" class="mobileResume">Resume</a>
     </div>
 
     <!-- Contact Section of my Content -->
@@ -103,7 +100,7 @@
         </ul>
 
         <div id="email">
-            <form method="post" action="https://people.rit.edu/ekt6170/WebsiteAttempt/formmail/formmail.php" name="ContactForm">
+            <form method="post" action="https://ekt003.github.io/portfolio/formmail/formmail.php" name="ContactForm">
                 <input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT,AUTH_TYPE,REMOTE_USER" />
                 <input type="hidden" name="recipients" value="ekt6170@rit.edu" />        
                 <input type="hidden" name="required" value="EmailAddr:ekt6170@rit.edu,FullName:Emily Turner" />
@@ -211,7 +208,7 @@ document.querySelector("#coding").onclick = function(e){
     newProject(divElement, "images/projects/PIXELPAINTER.png", "Pixel Painter", "Used: HTML | CSS | Javascript", "Pixel Painter was a Javascript web application project for IGME 230: Web Design and Implementation. The final project was a grid of pixels that could be painted in to create artwork. Features include brush sizes, hexcolor/RGB conversions, local saves, and a sample color palette. The project can be found on its <a href='https://people.rit.edu/ekt6170/230/exercises/IGME230Project2/PixelPainterExtended.html'>own website</a>, while its code is on <a href='https://github.com/ekt003/IGME230Project2'>github</a>." )
 
     //adds flocking project
-    newProject(divElement, "images/projects/FLOCKING.png", "Flocking", "Used: C# | Visual Studio | Unity 5.6.0f3", "Flocking was a class project for IGME 202: Interactive Media Development that I later returned to and cleaned up. The simulation shows a group of purple spheres that demonstrate the typical flocking AI behavior of cohesion, alignment, and separation. The spheres pursue a random point on the Perlin-Noise generated terrain. Once the flock enters a set radius of a target point, a new point is randomly generated. The simulation is largely passive, however, the user is able to press the space bar to spawn in more flock members at a random location on screen. The user may also press the 'c' key to change the camera view.");
+    newProject(divElement, "images/projects/FLOCKING.png", "Flocking", "Used: C# | Visual Studio | Unity 5.6.0f3", "Flocking was a class project for IGME 202: Interactive Media Development that I later returned to and cleaned up. The simulation shows a group of purple spheres that demonstrate the typical flocking AI behavior of cohesion, alignment, and separation. The spheres pursue a random point on the Perlin-Noise generated terrain. Once the flock enters a set radius of a target point, a new point is randomly generated. The simulation is largely passive, however, the user is able to press the space bar to spawn in more flock members at a random location on screen. The user may also press the 'c' key to change the camera view. Please do not try and load the Unity simulation on mobile. <a href='#'>Flock!</a>");
 }
 
 //function for onclick portfolio event
