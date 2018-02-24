@@ -24,7 +24,7 @@
     <!--Main Title Bar Div -->
     <div id="title">
         <h1>Emily Turner</h1>
-        <h2>Designer | Producer | Artist | Programmer | Whatever</h2>
+        <h2>Designer | Producer | Artist | Programmer</h2>
     </div>
 
     <!-- Div for image bar -->
@@ -146,7 +146,7 @@ let imgClicked = (e) => {
 let mailIMGEvent = document.querySelector("#mailIMG").onclick = imgClicked;
 
 
-
+//adding content for designer projects
 document.querySelector("#design").onclick = function(e){
     let divElement = newOnClick();
 
@@ -162,6 +162,7 @@ document.querySelector("#design").onclick = function(e){
 
 }
 
+//adding content for producer projects
 document.querySelector("#produced").onclick = function(e){
     let divElement = newOnClick();
 
@@ -183,6 +184,7 @@ document.querySelector("#produced").onclick = function(e){
 
 }
 
+//adding content for artist projects
 document.querySelector("#art").onclick = function(e){
     let divElement = newOnClick();
 
@@ -197,6 +199,7 @@ document.querySelector("#art").onclick = function(e){
     newProject(divElement, "", "3D Art Portfolio", "Used: Maya | Unity 5.6.0f3", "Most pieces are from IGME 219: 3D Animation and Asset Production.");
 }
 
+//adding content for programmer projects
 document.querySelector("#coding").onclick = function(e){
     let divElement = newOnClick();
 
