@@ -1,0 +1,10 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "Flocking2.data.unityweb",
+"asmCodeUrl": "Flocking2.asm.code.unityweb",
+"asmMemoryUrl": "Flocking2.asm.memory.unityweb",
+"asmFrameworkUrl": "Flocking2.asm.framework.unityweb",
+"asmLibraryUrl": "Flocking2.asm.library.unityweb",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#222C36"
+}
