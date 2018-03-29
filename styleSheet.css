@@ -96,13 +96,16 @@ textarea{
 
 #portfolioIMG{
     margin-top: 30px;
-    border-top: 5px white solid;
-    border-bottom: 5px white solid;
+    display:flex;
+}
+
+#portfolioIMG div{
+    flex:1;
+    margin:0.1%;
 }
 
 #portfolioIMG img{
-    width:24.8%;
-    min-width: 100px;
+    width:100%;
 }
 
 #portfolioIMG button{
@@ -236,6 +239,7 @@ textarea{
     
     #portfolioIMG img{
         width:100%;
+        display:block;
     }
 
     #social img{
