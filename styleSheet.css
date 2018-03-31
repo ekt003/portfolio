@@ -231,10 +231,16 @@ textarea{
 
 .resume{
     width:100%;
-	height:400px;
+    height:400px;
 }
 
 /* Media Queries */
+@media (max-width: 1000px){
+    .resume{
+        max-width:500px;
+    }
+}
+
 @media (max-width: 479px) {
     
     /* IDs Alphabetical Order */
