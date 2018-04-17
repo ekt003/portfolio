@@ -32,14 +32,14 @@
 </div>
 
 <div class="row" id="welcome">
-    <div class="column">
+    <div class="column left">
         <h2>Welcome</h2>
         <p>
             Hi there! My name is Emily. I am a second year Game Design and Development student at the Rochester Institute 
             of Technology.
         </p>
     </div>
-    <div class="column">
+    <div class="column left">
         <h2>About</h2>
         <p>
             While originally from Baltimore, I currently attend the Rochester Institute of Technology for their Game 
@@ -51,72 +51,75 @@
     
 </div>
 
-<div class="row" id="portfolio">
-
-    <h1 class="time">Portfolio</h1>
-    <div class="column">
-        <h2>What Lies Beneath <i class="trigger fa fa-plus-circle fa lg"></i></h2>
-        <p class="description" id="beneath">
-            A narrative driven augmented reality game set in the city of Dubrovnik, Croatia. The minimum viable product 
-            was developed during my time abroad in the Games and Tourism Study Abroad program at RIT.
-        </p>
+<div id="portfolio">
+    <div class="row">
+        <h1 class="time">Portfolio</h1>
+        <div class="column left">
+            <h2>What Lies Beneath <i class="trigger fa fa-plus-circle fa lg"></i></h2>
+            <p class="description" id="beneath">
+                A narrative driven augmented reality game set in the city of Dubrovnik, Croatia. The minimum viable product 
+                was developed during my time abroad in the Games and Tourism Study Abroad program at RIT.
+            </p>
+        </div>
+        <div class="column right">
+            <h2>Project IPRE <i class="trigger fa fa-plus-circle fa lg"></i></h2>
+            <p class="description" id="ipre">
+                Group Project. I created an interactive game using PixiJS, a graphics library. The game can be found on the 
+                project site and the code can be found on the project github.
+            </p>
+        </div>
     </div>
-    <div class="column">
-        <h2>Project IPRE <i class="trigger fa fa-plus-circle fa lg"></i></h2>
-        <p class="description" id="ipre">
-            Group Project. I created an interactive game using PixiJS, a graphics library. The game can be found on the 
-            project site and the code can be found on the project github.
-        </p>
-    </div>
 
-    <div class="column">
-        <h2>Kiting <i class="trigger fa fa-plus-circle fa lg"></i></h2>
-        <p class="description" id="kiting">
+    <div class="row">
+        <div class="column left">
+            <h2>Kiting <i class="trigger fa fa-plus-circle fa lg"></i></h2>
+            <p class="description" id="kiting">
             A 2D evasion game where the player attempts to lead enemy kites into a giant fan which blows them up and away. 
             The game gets more difficult over time as more and more kites are spawned. I started the project as an 
             exercise to learn autonomous agents and am aiming for a minimum viable product by summer 2018.
-        </p>
-    </div>
-    <div class="column">
-        <h2>Wander <i class="trigger fa fa-plus-circle fa lg"></i></h2>
-        <p class="description" id="wander">
+            </p>
+        </div>
+        <div class="column right">
+            <h2>Wander <i class="trigger fa fa-plus-circle fa lg"></i></h2>
+            <p class="description" id="wander">
             Project Info
-        </p>
+            </p>
+        </div>
     </div>
 
-    <div class="column">
-        <h2>Flocking <i class="trigger fa fa-plus-circle fa lg"></i></h2>
-        <p class="description" id="flocking">
+    <div class="row">
+        <div class="column left">
+            <h2>Flocking <i class="trigger fa fa-plus-circle fa lg"></i></h2>
+            <p class="description" id="flocking">
             Flocking is a cleaned up class project for IGME 202: Interactive Media Development cleaned up. The simulation 
             shows a group of purple spheres that demonstrate the typical flocking AI behavior of cohesion, alignment, and 
             separation. The spheres pursue a random point on the Perlin-Noise generated terrain. Once the flock enters a 
             set radius of a target point, a new point is randomly generated. The simulation is largely passive, however, 
             the user is able to press the space bar to spawn in more flock members at a random location on screen. The 
             user may also press the 'c' key to change the camera view. 
-        </p>
-    </div>
-    <div class="column">
-        <h2>Pixel Painter <i class="trigger fa fa-plus-circle fa lg"></i></h2>
-        <p class="description" id="painter">
+            </p>
+        </div>
+
+        <div class="column right">
+            <h2>Pixel Painter <i class="trigger fa fa-plus-circle fa lg"></i></h2>
+            <p class="description" id="painter">
             Pixel Painter is web application made with HTML/CSS/Javascript. It is a grid of pixels that can be 
             painted on to create pixel art. Features include brush sizes, hexcolor/RGB conversions, local saves, 
             and a sample color palette. The project can be found on its own website, while its code is on github.
-        </p>
+            </p>
+        </div>
     </div>
     
     
 
 </div>
 
-<div id="contact" class="row">
+<div id="contact">
     <h1 class="time">Contact</h1>
-    <div class="column">
         <h2>Contact</h2>
         <p>
             Questions about the things I've done? Wanna get in touch? Shoot me an email or stalk me on social media!
         </p>
-    </div>
-    <div class="column">
         <h2>Social Media</h2>
         <p>
             <ul id="social">
@@ -126,7 +129,6 @@
             </ul>
             
         </p>
-    </div>
 </div>
     
 <!--script to make the top photo change colors based on the time of day -->
@@ -152,7 +154,8 @@
             console.log(description);
             description.style.display = 'block';
         }
-        else{
+        
+        if(description.style.display == 'block'){
             description.style.display = 'none';
         }
     }

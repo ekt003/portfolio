@@ -80,12 +80,21 @@ p{
 }
 
 h2{
-    margin-left: 2%;
-    width:60%;
+
     color:white;
     border-bottom: 3px solid white;
     font-family: 'Archivo Black', sans-serif;
     font-size:28px;
+}
+
+#contact{
+    margin: 0px auto;
+    text-align:center;
+    width:90%;
+}
+
+#contact h2{
+    text-align:center;
 }
 
 .row:after{
@@ -139,10 +148,10 @@ i:active{
 }
 
 .column{
-    float: left;
-    width: 48%;
-    padding-left:10px;
-    margin: 0 auto;
+    width: 46%;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin: auto;
 
 }
 
@@ -172,6 +181,20 @@ i:active{
     background-attachment: fixed;
 }
 
+.left{
+    float:left;
+    text-align:left;
+}
+
+.right{
+    float:right;
+    text-align:right;
+}
+
+.right h2{
+    text-align: right;
+}
+
 .column h2{
     padding:5px 0px;
     margin:10px 0px;
@@ -181,9 +204,7 @@ i:active{
     max-width:350px;
 }
 
-.description{
-    display: none;
-}
+
 
 /*Media Queries*/
 @media (max-width: 479px) {
