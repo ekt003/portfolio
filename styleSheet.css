@@ -68,7 +68,7 @@ a:active{
 
 #navBar ul li{
     color:white;
-    font-size:22px;
+    font-size:28px;
     display: inline;
     padding: 0px 100px;
     
@@ -80,7 +80,6 @@ p{
 }
 
 h2{
-
     color:white;
     border-bottom: 3px solid white;
     font-family: 'Archivo Black', sans-serif;
@@ -90,7 +89,6 @@ h2{
 #contact{
     margin: 0px auto;
     text-align:center;
-    width:90%;
 }
 
 #contact h2{
@@ -165,7 +163,7 @@ i:active{
     margin: auto;
 }
 
-.row h1{
+.section{
     font-size:50px;
     padding: 20px 0px;
     border-top: 3px solid white;
