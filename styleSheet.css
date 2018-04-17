@@ -1,295 +1,222 @@
-/* General Rules Alphabetical Order */
-
-body{
+body, html {
+    height: 100%;
     background-color: black;
-    color:white;
     font-family: 'Lato', sans-serif;
-    text-align:center;
+}
+
+.bg { 
+
+    /* The image used */
+    background-image: url("night.png");
+
+    /* Full height */
+    height: 50%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.title{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width:100%;
-    margin:auto;
-    font-size: 18px;
+    font-size:50px;
+}
+
+.title h1{
+    text-shadow: 5px 5px black;
+}
+
+h1{
+    font-family: 'Archivo Black', sans-serif;
+    color:white;
+    text-align: center;
 }
 
 a{
-    color: #f2747d;
     text-decoration: none;
+    color:white;
 }
 
 a:hover{
-    color: #87d8ea;
+    transition: 0.25s;
+    color: #5b54dd;
 }
 
-input{
-    width:100%;
-    min-width: 100px;
+a:active{
+    color: #261fad;
 }
 
-td,th{
-    padding: 10px;
-}
-
-textarea{
-    width:100%;
-}
-
-/* IDs Alphabetical Order */
-
-#email {
-    width:50%;
-    margin: 20px auto 5px auto;
-    display: none;
-}
-
-#email p{
-    padding:0px;
-    width: 100%;
-    margin:auto;
-}
-
-#email table{
-    text-align:left;
-}
-
-#disclaimer{
-    font-size:15px;
-}
-
-#images{
-    border-top:5px white solid;
-    padding-bottom:0px;
-}
-
-#images img{
-    width:100%;
-}
-
-#navbar{
-    background-color:white;
-    color: black;
-    padding: 3px 0px;
+#navBar{
     margin-top:0px;
     position: sticky;
-    top:0px;
-    border-bottom: 2px black solid;
+    top:0;
+    background-color: black;
 }
 
-#navbar ul{
-    list-style-type: none;
+#navBar ul{
+    text-align:center;
+    padding: 5px 0px;
     margin:0px;
-    padding:0px;
+    border-top:3px solid white;
+    border-bottom:3px solid white;
+    font-family: 'Archivo Black', sans-serif;
 }
 
-#navbar ul li{
+#navBar ul li{
+    color:white;
+    font-size:22px;
     display: inline;
-    padding-left:10px;
-    padding-right:10px;
+    padding: 0px 100px;
+    
 }
 
-#navbar ul li a{
-    text-decoration: none;
-    color:#f2747d;
+p{
+    color:white;
+    font-size: 22px;
 }
 
-#navbar ul li a:hover{
-    color: #87d8ea;
+h2{
+    margin-left: 2%;
+    width:60%;
+    color:white;
+    border-bottom: 3px solid white;
+    font-family: 'Archivo Black', sans-serif;
+    font-size:28px;
 }
 
-#portfolioIMG{
-    margin-top: 30px;
-    display:flex;
-    background-color: white;
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
 }
-
-#portfolioIMG div{
-    flex:1;
-    margin:0.1%;
-}
-
-#portfolioIMG img{
-    width:100%;
-}
-
-#portfolioIMG img:hover{
-    opacity:0.5;
-}
-
-#portfolioIMG button{
-    margin:0px;
-    padding: 0px;
-    border: none;
-}
-
-#project{
-    display:none;
-}
- 
-#project h2{
-     width:90%;
-     margin: 0px auto;
-     text-align: left;   
-}
-
-#project img{
-    width:90%;
-    margin: 0px auto;
-}
- 
-#project p{
-    text-align: left;
-    margin:auto;
- }
 
 #social{
-    list-style-type: none;
-    margin:0px;
+    width:100%;
     padding:0px;
-}
+    margin:0px;
 
-#social img{
-    max-width: 50px;
-    border-radius: 600px;
-    border: 1px solid white;
-}
-
-#social img:hover{
-    opacity: 0.5;
 }
 
 #social li{
     display: inline;
     padding-left:10px;
     padding-right:10px;
+    font-size: 3em;
 }
 
-#submitButton{
-    background-color: #f2747d;
-    color:white;
-    font-family: 'Lato', sans-serif;
-    border:none;
-    font-size: 24px;
-    max-width: 200px;
-    min-width:50px;
-    width:100%;
-    padding:0px;
-    margin:auto;    
+a:hover{
+    transition: 0.25s;
+    color: #5b54dd;
 }
 
-#submitButton:hover{
-    background-color: #87d8ea;
+a:active{
+    color: #261fad;
 }
 
-#title h1{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 60px;
+i:hover{
+    transition: 0.25s;
+    color: #5b54dd;
+}
+
+i:active{
+    color: #261fad;
+}
+
+#social li a:hover{
+    color: #5b54dd;
+}
+
+#social li a:active{
+    color: #261fad;
+}
+
+#social img{
+    width: 50px;
+}
+
+.column{
+    float: left;
+    width: 48%;
+    padding-left:10px;
+    margin: 0 auto;
+
+}
+
+.column p{
+    padding: 0% 2%;
+    margin:auto;
+    line-height: 1.5;
+}
+
+.row{
+    width:95%;
+    margin: auto;
+}
+
+.row h1{
+    font-size:50px;
+    padding: 20px 0px;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+}
+
+.column h2{
+    padding:5px 0px;
     margin:10px 0px;
-    margin-bottom:0px;
 }
 
-#title h2{
-    font-size:22px;
-    margin-bottom:10px;
-    margin-top:0px;
+.column img{
+    max-width:350px;
 }
 
-/* Classes Alphabetical Order */
-
-.content{
-    width: 45%;
-    margin:auto;
-    background-color:white;
-    color: black;
-    padding: 15px 40px;
-    margin-top: 30px;
-    outline: 2px solid white;
-    border: 15px solid black;
-}
-
-.content h1{
-    margin:0px;
-}
-
-.content p{
-    line-height: 2;
-    width:90%;
-    margin:auto;
-}
-
-.mobileResume{
+.description{
     display:none;
-    background-color: #f2747d;
-    color:white;
-    font-family: 'Lato', sans-serif;
-    border:none;
-    font-size: 24px;
-    padding:5px 10px;
+    padding:none;
+    margin:none;
 }
 
-.mobileResume:hover{
-    background-color: #87d8ea;
-    color:white;
-}
-
-.resume{
-    width:100%;
-    height:400px;
-}
-
-/* Media Queries */
-@media (max-width: 1000px){
-    .resume{
-        max-width:500px;
-    }
-}
-
+/*Media Queries*/
 @media (max-width: 479px) {
-    
-    /* IDs Alphabetical Order */
-    #navbar ul li{
-        display: none;
+
+
+    .row h1{
+        font-size: 35px;
+        padding: 0px;
+        margin: 0px;
     }
-    
-    #portfolioIMG img{
+
+    .column{
+        width:95%;
+    }
+
+    .bg{
+        height: 20%; 
+    }
+
+    .title{
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         width:100%;
-        display:block;
+        font-size:20px;
     }
 
-    #social img{
-        max-width: 75px;
-        width:20%;
-    }
-
-    #social li{
-        padding:2px;
-    }
-
-    #title h1{
-        font-size:60px;
-        margin-bottom: 10px;
-    }
-
-    #title h2{
-        display:none;
-    }
-
-    /* Classes Alphabetical Order */
-    .content{
-        width:60%;
-    }
-
-    .content p{
+    h2{
         width:100%;
-    }
-    
-    .dash{
-        visibility: hidden;
-    }
-
-    .mobileResume{
-        display:block;
+        padding: 0px;
+        margin: 0px;
+        font-size: 20px;
     }
 
-    .resume{
-        display: none;
-    }
+
+
+
 
 }

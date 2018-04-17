@@ -1,323 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Basic Page Setup: Document Metadata -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Portfolio for IGME 230.">
+    <title>Portfolio</title>
+    <meta name="description" content="Emily Turner Portfolio Website">
     <meta name="author" content="Emily Turner">
-    <title>Emily Turner</title>
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:900|Montserrat" rel="stylesheet">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="styleSheet.css">
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="styleSheet.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Lato" rel="stylesheet">
     
+    <link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
 
-    <!--Main Title Bar Div -->
-    <div id="title">
+<div class="bg" id="time">
+    <div class="title">
         <h1>Emily Turner</h1>
-        <h2>creative coder with her head in the game</h2>
     </div>
+</div>
 
-    <!-- Div for image bar -->
-    <div id="images">
-        <a href="#portfolioIMG">
-        <img src="images/banner.png" alt="banner">
-        </a>
+<div id="navBar">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="">Fourth Thing</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</div>
+
+<div class="row" id="welcome">
+    <div class="column">
+        <h2>Welcome</h2>
+        <p>
+            Hi there! My name is Emily. I am a second year Game Design and Development student at the Rochester Institute 
+            of Technology.
+        </p>
     </div>
-
-    <!-- div for page navigation bar -->
-    <div id="navbar">
-        <ul>
-            <li><a href="#title">Home</a></li>
-            <li class="dash"> | </li>
-            <li><a href="#about">About</a></li>
-            <li class="dash"> | </li>
-            <li><a href="#portfolioIMG">Portfolio</a></li>
-            <li class="dash"> | </li>
-            <li><a href="#resume">Resume</a></li>
-            <li class="dash"> | </li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
-
-    <!-- Welcome Section of my Content -->
-    <div class="content">
-        <h1>Welcome</h1>
-        <p>My name is Emily Turner. I am a second year Game Design and Development student at the Rochester Institute of Technology. This is a website containing some of my best work and information on how to contact me. I am looking for work for the summer of 2018 and the summer of 2019.</p>
-    </div>
-
-    <!-- About Section of my Content -->
-    <div class="content" id="about">
-        <h1>About</h1>
-        <p>While originally from Baltimore, I currently attend the Rochester Institute of Technology for their Game Design and Development BS Degree. I started coding back in 2009 when I joined my middle school's robotics team. Nearly ten years later, I am still expanding my skill set. I am looking for a co-op for the summers of 2018 and 2019.</p>
-    </div>
-
-    <!-- Portfolio Section of my Content -->
-    <div class="content" id="portfolio">
-        <h1>Portfolio</h1>
-        <p>Want to know about my skills? Click one of the images below and find out all of my relevant projects.</p>
-    </div>
-
-    <!-- DIV for Portfolio Project Images -->
-    <div id="portfolioIMG">
-        <div><img src="images/rolesIMG/designer.png" id="design" alt="designIMG"></div>
-        <div><img src="images/rolesIMG/producer.png" id="produced" alt="producerIMG"></div>
-        <div><img src="images/rolesIMG/artist.png" id="art" alt="artistIMG"></div>
-        <div><img src="images/rolesIMG/programmer.png" id="coding" alt="programmerIMG"></div>
+    <div class="column">
+        <h2>About</h2>
+        <p>
+            While originally from Baltimore, I currently attend the Rochester Institute of Technology for their Game 
+            Design and Development BS Degree. I started coding back in 2009 when I joined my middle school's robotics 
+            team. Nearly ten years later, I am still expanding my skill set. I am looking for a co-op for the 
+            summers of 2018 and 2019.
+        </p>
     </div>
     
-    <!-- Individual Portfolio Description Section of my Content -->
-    <div class="content" id="project">
+</div>
+
+<div class="row" id="portfolio">
+
+    <h1>Portfolio</h1>
+    <div class="column">
+        <h2>What Lies Beneath <i class="trigger fa fa-plus-circle fa lg"></i></h2>
+        <p class="description" id="beneath">
+            A narrative driven augmented reality game set in the city of Dubrovnik, Croatia. The minimum viable product 
+            was developed during my time abroad in the Games and Tourism Study Abroad program at RIT.
+        </p>
+    </div>
+    <div class="column">
+        <h2>Project IPRE <i class="trigger fa fa-plus-circle fa lg"></i></h2>
+        <p class="description" id="ipre">
+            Group Project. I created an interactive game using PixiJS, a graphics library. The game can be found on the 
+            project site and the code can be found on the project github.
+        </p>
     </div>
 
-    <!-- Resume Section of my Content -->
-    <div class="content" id="resume">
-        <h1>Resume</h1>
-        <p>For privacy reasons, this version of my resume does not list my permanent residence or phone number. Please reach out if you are in need of omitted information.</p>
-        <iframe class="resume" src="resume/etResumeWeb.pdf"></iframe>
-        <a href="resume/etResumeWeb.pdf" class="mobileResume">Resume</a>
+    <div class="column">
+        <h2>Kiting <i class="trigger fa fa-plus-circle fa lg"></i></h2>
+        <p class="description" id="kiting">
+            A 2D evasion game where the player attempts to lead enemy kites into a giant fan which blows them up and away. 
+            The game gets more difficult over time as more and more kites are spawned. I started the project as an 
+            exercise to learn autonomous agents and am aiming for a minimum viable product by summer 2018.
+        </p>
+    </div>
+    <div class="column">
+        <h2>Wander <i class="trigger fa fa-plus-circle fa lg"></i></h2>
+        <p class="description" id="wander">
+            Project Info
+        </p>
     </div>
 
-    <!-- Contact Section of my Content -->
-    <div class="content" id="contact">
-        <h1>Contact</h1>
-        
-        <p>Questions about the things I've done? Wanna get in touch?<br>Find me on the social media accounts below or shoot me an email at ekt6170@rit.edu.</p>
-        <ul id="social">
-            <!--<li><img src="images\Social_Media\mail.png" id="mailIMG" alt="mail"></li> -->
-            <li><a href="https://www.linkedin.com/in/emily-turner-662135127/"><img src="images\Social_Media\linkedin.png" alt="linkedIn"></a></li>
-            <li><a href="https://github.com/ekt003"><img src="images\Social_Media\github.png" alt="GitHub"></a></li>
-            <li><a href="https://twitter.com/i_am_leviathan"><img src="images\Social_Media\twitter.png" alt="Twitter"></a></li>
-        </ul>
-
-        <div id="email">
-            <form method="post" action="https://ekt003.github.io/portfolio/formmail/formmail.php" name="ContactForm">
-                <input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT,AUTH_TYPE,REMOTE_USER" />
-                <input type="hidden" name="recipients" value="ekt6170@rit.edu" />        
-                <input type="hidden" name="required" value="EmailAddr:ekt6170@rit.edu,FullName:Emily Turner" />
-                <input type="hidden" name="subject" value="Test Mail from Contact Form" />            
-                
-                <table>
-                    <tr>
-                        <th>Name: </th>
-                        <th><input type="text" id="name" name="FullName"></th>
-                    </tr>
-                    <tr>
-                        <th>Email: </th>
-                        <th><input type="email" id="mail" name="EmailAddr"></th>
-                    </tr>
-                    <tr>
-                        <th>Message: </th>
-                        <th><textarea name="mesg"></textarea></th>
-                    </tr>
-
-                </table>
-
-                <input type="submit" id="submitButton" value="Submit" />
-                
-            </form>
-        </div>
-        
+    <div class="column">
+        <h2>Flocking <i class="trigger fa fa-plus-circle fa lg"></i></h2>
+        <p class="description" id="flocking">
+            Flocking is a cleaned up class project for IGME 202: Interactive Media Development cleaned up. The simulation 
+            shows a group of purple spheres that demonstrate the typical flocking AI behavior of cohesion, alignment, and 
+            separation. The spheres pursue a random point on the Perlin-Noise generated terrain. Once the flock enters a 
+            set radius of a target point, a new point is randomly generated. The simulation is largely passive, however, 
+            the user is able to press the space bar to spawn in more flock members at a random location on screen. The 
+            user may also press the 'c' key to change the camera view. 
+        </p>
     </div>
-
-    <div id="disclaimer">
-        <p>This page uses a <a href="https://www.tectite.com/formmailpage.php">PHP form</a> provided by Tecta</p>
-        <p>Last Updated 03.29.2018</p>
+    <div class="column">
+        <h2>Pixel Painter <i class="trigger fa fa-plus-circle fa lg"></i></h2>
+        <p class="description" id="painter">
+            Pixel Painter is web application made with HTML/CSS/Javascript. It is a grid of pixels that can be 
+            painted on to create pixel art. Features include brush sizes, hexcolor/RGB conversions, local saves, 
+            and a sample color palette. The project can be found on its own website, while its code is on github.
+        </p>
     </div>
     
     
 
+</div>
+
+<div id="contact" class="row">
+    <h1>Contact</h1>
+    <div class="column">
+        <h2>Contact</h2>
+        <p>
+            Questions about the things I've done? Wanna get in touch? Shoot me an email or stalk me on social media!
+        </p>
+    </div>
+    <div class="column">
+        <h2>Social Media</h2>
+        <p>
+            <ul id="social">
+                <li><a href="https://www.linkedin.com/in/emily-turner-662135127/"><i class="fa fa-linkedin-square fa-lg"></i></a></li>
+                <li><a href="https://github.com/ekt003"><i class="fa fa-github-square fa-lg"></i></a></li>
+                <li><a href="https://twitter.com/i_am_leviathan"><i class="fa fa-twitter-square fa-lg"></i></a></li>
+            </ul>
+            
+        </p>
+    </div>
+</div>
+    
+<!--script to make the top photo change colors based on the time of day -->
 <script>
 
-let displayNum = 0;
+    //adding onclick events for the portfolio projects
+    let iconList = document.querySelectorAll(".trigger");
+    let descriptionList = document.querySelectorAll(".description");
 
-//Script to make the email button work, for later version
-let imgClicked = (e) => {
-    document.querySelector("#email").style.display = "block";
-}
+    let index = 0;
 
-//let mailIMGEvent = document.querySelector("#mailIMG").onclick = imgClicked;
+    for(let icon of iconList){
+        icon.onclick = displayText(index);
+        index++;
 
-
-//adding content for designer projects
-document.querySelector("#design").onclick = function(e){
-    let divElement = newOnClick();
-
-    let titleCard = document.createElement("h1");
-    titleCard.innerHTML = "Design Skills";
-    divElement.appendChild(titleCard);
-
-    //adds project IPRE
-    newProject(divElement, "images/projects/IPRETEST.png", "Project IPRE", "Used: HTML | CSS | Javascript | PixiJS", "Project IPRE was my final project for IGME 230: Web Design and Implementation. Working together with a classmate, we created an interactive game using PixiJS, a graphics library. The game can be found <a href='https://people.rit.edu/~deb2610/230/project1/index.html'>on the project site</a> and the code can be found <a href='https://github.com/ekt003/IGME230Project3'>on the project github</a>.");
-
-    //adds Kiting
-    newProject(divElement, "", "Kiting", "Used: C# | Visual Studio | Unity 5.6.0f3", "Kiting is a personal project that I started in Fall 2017. It is a 2D evasion game where the player attempts to lead enemy kites into a giant fan which blows them up and away. The game gets more difficult over time as more and more kites are spawned.")
-
-}
-
-//adding content for producer projects
-document.querySelector("#produced").onclick = function(e){
-    let divElement = newOnClick();
-
-    let titleCard = document.createElement("h1");
-    titleCard.innerHTML = "Leadership Skills";
-    divElement.appendChild(titleCard);
-
-    //adds GDD Board Game
-    newProject(divElement, "images/projects/DESTINATIONMANAGEMENT.png", "Destination Management", "", "My team project for IGME 220: Game Design and Development. I am currently working as the Lead Producer on this project with three other students to produce an analogue strategy game based around tourism management. The game is currently in its second phase of prototyping. There will be more information on this project in May 2018 when it is complete.");
-
-    //adds 580/590 Project
-    newProject(divElement, "images/projects/BENEATH.png", "What Lies Beneath", "", "My team project for IGME 580/590: Games and Tourism Production Studio. I am currently working as the Production Coordinator on this project with eight other students to produce a narrative driven augmented reality game. I am also resonsible for building a playable prototype for our minimum viable product using ARIS.");
-
-    //adds Student Government
-    newProject(divElement, "images/projects/SG.png", "Freshman Senator", "", "Last year I was elected as Freshman Senator for RIT's Student Government. Student Government works with faculty, staff, and the Board of Trustees among other organizations, to advocate for the needs of RIT's diverse student body. As Freshman Senator, I represented the freshman class at RIT. The role involved responding to our student petition site and working on different projects to improve student life.");
-
-    //adds University Council
-    newProject(divElement, "images/projects/UC.png", "University Council", "", "RIT's <a href='https://www.rit.edu/president/universitycouncil/about'>University Council</a> meets once a month to vote on university policies. The Council is chaired by the President of the University and is composed of a variety of students, faculty, and staff. In my spring semester of 2017, I served as one of the thirty three voting members.")
-
-}
-
-//adding content for artist projects
-document.querySelector("#art").onclick = function(e){
-    let divElement = newOnClick();
-
-    let titleCard = document.createElement("h1");
-    titleCard.innerHTML = "Art Skills";
-    divElement.appendChild(titleCard);
-
-    //adds 2D Portfolio - to be simplified later
-    //creates images for slideshow
-    let img1 = document.createElement("img");
-    let img2 = document.createElement("img");
-    let img3 = document.createElement("img");
-    let img4 = document.createElement("img");
-    let img5 = document.createElement("img");
-    let img6 = document.createElement("img");
-    let img7 = document.createElement("img");
-    let img8 = document.createElement("img");
-
-    //set image sources
-    img1.src = "images/artPortfolio/img1.png";
-    img2.src = "images/artPortfolio/img2.png";
-    img3.src = "images/artPortfolio/img3.png";
-    img4.src = "images/artPortfolio/img4.png";
-    img5.src = "images/artPortfolio/img5.png";
-    img6.src = "images/artPortfolio/img6.png";
-    img7.src = "images/artPortfolio/img7.png";
-    img8.src = "images/artPortfolio/img8.png";
-
-    //set class
-    img1.className = "mySlides";
-    img2.className = "mySlides";
-    img3.className = "mySlides";
-    img4.className = "mySlides";
-    img5.className = "mySlides";
-    img6.className = "mySlides";
-    img7.className = "mySlides";
-    img8.className = "mySlides";
-
-    
-
-    //appends children
-    divElement.appendChild(img1);
-    divElement.appendChild(img2);
-    divElement.appendChild(img3);
-    divElement.appendChild(img4);
-    divElement.appendChild(img5);
-    divElement.appendChild(img6);
-    divElement.appendChild(img7);
-    divElement.appendChild(img8);
-
-    //adds 2D Art
-    newProject(divElement, "", "2D Art Portfolio", "Used: Adobe Photoshop | Sketchbook Pro | Pencils and Paper", "");
-
-    //adds 3D Art
-    newProject(divElement, "", "3D Art Portfolio", "Used: Maya | Unity 5.6.0f3", "Most pieces are from IGME 219: 3D Animation and Asset Production.");
-
-    carousel();
-}
-
-//adding content for programmer projects
-document.querySelector("#coding").onclick = function(e){
-    let divElement = newOnClick();
-
-    let titleCard = document.createElement("h1");
-    titleCard.innerHTML = "Programming Skills";
-    divElement.appendChild(titleCard);
-
-    //adds pixel painter project
-    newProject(divElement, "images/projects/PIXELPAINTER.png", "Pixel Painter", "Used: HTML | CSS | Javascript", "Pixel Painter was a Javascript web application project for IGME 230: Web Design and Implementation. The final project was a grid of pixels that could be painted in to create artwork. Features include brush sizes, hexcolor/RGB conversions, local saves, and a sample color palette. The project can be found on its <a href='https://people.rit.edu/ekt6170/230/exercises/IGME230Project2/PixelPainterExtended.html'>own website</a>, while its code is on <a href='https://github.com/ekt003/IGME230Project2'>github</a>." )
-
-    //adds flocking project
-    newProject(divElement, "images/projects/FLOCKING.png", "Flocking", "Used: C# | Visual Studio | Unity 5.6.0f3", "Flocking was a class project for IGME 202: Interactive Media Development that I later returned to and cleaned up. The simulation shows a group of purple spheres that demonstrate the typical flocking AI behavior of cohesion, alignment, and separation. The spheres pursue a random point on the Perlin-Noise generated terrain. Once the flock enters a set radius of a target point, a new point is randomly generated. The simulation is largely passive, however, the user is able to press the space bar to spawn in more flock members at a random location on screen. The user may also press the 'c' key to change the camera view. The link below is for the Unity build. It is not available on mobile due to its file size <a href='flocking/index.html'>Flock!</a>");
-}
-
-//function for onclick portfolio event
-function newOnClick(){
-    if(document.querySelector("#project").style.display != "block"){
-        document.querySelector("#project").style.display = "block";
     }
 
-    let divElement = document.querySelector("#project");
-    divElement.innerHTML="";
-    return divElement;
-}
+    function displayText(x){
+        let description = descriptionList[index];
+        console.log(description);
 
-//function to allow easy addition of portfolio pieces
-function newProject(divElement, projectSRC, projectTitle, projectSkills, projectDescription) {
-    let projectIMG = document.createElement("img");
-    projectIMG.src = projectSRC;
-
-    let title = document.createElement("h2");
-    title.innerHTML = projectTitle;
-
-    let skills = document.createElement("p");
-    skills.innerHTML = projectSkills;
-
-    let description = document.createElement("p");
-    description.innerHTML = projectDescription;
-
-    divElement.appendChild(projectIMG);
-    divElement.appendChild(title);
-    divElement.appendChild(skills);
-    divElement.appendChild(description);
-    return;
-}
-
-//Slideshow Javascript from W3Schools
-var slideIndex = 0;
-if(document.querySelector("#art").style.display == "block"){
-    carousel();
-}
-
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    if(x.length > 0){
-        for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none"; 
+        if(description.style.display == "none"){
+            console.log(description);
+            description.style.display == "block";
         }
-        slideIndex++;
-        if (slideIndex > x.length) {slideIndex = 1} 
-        x[slideIndex-1].style.display = "block"; 
-        setTimeout(carousel, 3000); // Change image every 3 seconds
+        else{
+            description.style.display == "none";
+        }
     }
-    
-}
 
+    //gets the date and time of being accessed
+    let now = new Date();
+
+    let hour = now.getHours();
+
+    let backgroundIMG = document.querySelector("#time");
+
+    //sets the background image based on the local time of day
+    //sunrise from 5AM to 9AM
+    if(hour>=5 && hour<9){
+        backgroundIMG.style.backgroundImage = "url('sunrise.png')";
+    }
+    //day from 9AM to 5PM
+    if(hour>=9 && hour<17){
+        backgroundIMG.style.backgroundImage = "url('daytime.png')";
+    }
+
+    //sunset from 5PM to 8PM
+    if(hour>=17 && hour<20){
+        backgroundIMG.style.backgroundImage = "url('sunset.png')";
+    }
+
+    //night from 8PM to 5AM
+    if((hour>=20 && hour<23) || (hour>=0 && hour<5)){
+        backgroundIMG.style.backgroundImage = "url('night.png')";
+    }
 
 
 </script>
-    
-</body>
 
+</body>
 </html>
