@@ -16,7 +16,7 @@
 </head>
 <body>
 
-<div class="bg" id="time">
+<div class="time bg">
     <div class="title">
         <h1>Emily Turner</h1>
     </div>
@@ -53,7 +53,7 @@
 
 <div class="row" id="portfolio">
 
-    <h1>Portfolio</h1>
+    <h1 class="time">Portfolio</h1>
     <div class="column">
         <h2>What Lies Beneath <i class="trigger fa fa-plus-circle fa lg"></i></h2>
         <p class="description" id="beneath">
@@ -109,7 +109,7 @@
 </div>
 
 <div id="contact" class="row">
-    <h1>Contact</h1>
+    <h1 class="time">Contact</h1>
     <div class="column">
         <h2>Contact</h2>
         <p>
@@ -148,12 +148,12 @@
         let description = descriptionList[index];
         console.log(description);
 
-        if(description.style.display == "none"){
+        if(description.style.display == 'none'){
             console.log(description);
-            description.style.display == "block";
+            description.style.display = 'block';
         }
         else{
-            description.style.display == "none";
+            description.style.display = 'none';
         }
     }
 
@@ -162,26 +162,35 @@
 
     let hour = now.getHours();
 
-    let backgroundIMG = document.querySelector("#time");
+    let backgroundIMG = document.querySelectorAll(".time");
+
 
     //sets the background image based on the local time of day
     //sunrise from 5AM to 9AM
     if(hour>=5 && hour<9){
-        backgroundIMG.style.backgroundImage = "url('sunrise.png')";
+        for(let div of backgroundIMG){
+            div.style.backgroundImage = "url('sunrise.png')";
+        }
     }
     //day from 9AM to 5PM
     if(hour>=9 && hour<17){
-        backgroundIMG.style.backgroundImage = "url('daytime.png')";
+        for(let div of backgroundIMG){
+            div.style.backgroundImage = "url('daytime.png')";
+        }
     }
 
     //sunset from 5PM to 8PM
     if(hour>=17 && hour<20){
-        backgroundIMG.style.backgroundImage = "url('sunset.png')";
+        for(let div of backgroundIMG){
+            div.style.backgroundImage = "url('sunset.png')";
+        }
     }
 
     //night from 8PM to 5AM
     if((hour>=20 && hour<23) || (hour>=0 && hour<5)){
-        backgroundIMG.style.backgroundImage = "url('night.png')";
+        for(let div of backgroundIMG){
+            div.style.backgroundImage = "url('night.jpg')";
+        }
     }
 
 

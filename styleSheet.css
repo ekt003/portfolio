@@ -28,14 +28,11 @@ body, html {
     font-size:50px;
 }
 
-.title h1{
-    text-shadow: 5px 5px black;
-}
-
 h1{
     font-family: 'Archivo Black', sans-serif;
     color:white;
     text-align: center;
+    text-shadow: 5px 5px black;
 }
 
 a{
@@ -155,7 +152,6 @@ i:active{
 }
 
 .row{
-    width:95%;
     margin: auto;
 }
 
@@ -164,6 +160,14 @@ i:active{
     padding: 20px 0px;
     border-top: 3px solid white;
     border-bottom: 3px solid white;
+
+    /* The image used */
+    background-image: url("night.jpg");
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .column h2{
@@ -176,7 +180,7 @@ i:active{
 }
 
 .description{
-    display:none;
+    display: none;
 }
 
 /*Media Queries*/
