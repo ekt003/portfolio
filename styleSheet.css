@@ -51,9 +51,6 @@ a:active{
 }
 
 #navBar{
-    margin-top:0px;
-    position: sticky;
-    top:0;
     background-color: black;
 }
 
@@ -199,7 +196,7 @@ i:active{
 }
 
 .column img{
-    padding-top: 5%;
+    padding-top: 4%;
     width:100%;
 }
 
