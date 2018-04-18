@@ -33,7 +33,7 @@ h1{
     font-family: 'Archivo Black', sans-serif;
     color:white;
     text-align: center;
-    text-shadow: 5px 5px black;
+    text-shadow: 4px 4px black;
 }
 
 a{
@@ -199,7 +199,8 @@ i:active{
 }
 
 .column img{
-    max-width:350px;
+    padding-top: 4%;
+    width:100%;
 }
 
 
@@ -208,8 +209,8 @@ i:active{
 @media (max-width: 479px) {
 
 
-    .row h1{
-        font-size: 35px;
+    .section{
+        font-size: 40px;
         padding: 0px;
         margin: 0px;
     }
@@ -235,7 +236,7 @@ i:active{
         width:100%;
         padding: 0px;
         margin: 0px;
-        font-size: 20px;
+        font-size: 25px;
     }
 
 

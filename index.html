@@ -55,6 +55,7 @@
     <div class="row">
         <h1 class="time section">Portfolio</h1>
         <div class="column left">
+            <img src="projects/BENEATH.png" alt="beneath">
             <h2>What Lies Beneath <i class="trigger fa fa-plus-circle fa lg"></i></h2>
             <p class="description" id="beneath">
                 A narrative driven augmented reality game set in the city of Dubrovnik, Croatia. The minimum viable product 
@@ -62,9 +63,10 @@
             </p>
         </div>
         <div class="column right">
+            <img src="projects/IPRE.png" alt="IPRE">
             <h2>Project IPRE <i class="trigger fa fa-plus-circle fa lg"></i></h2>
             <p class="description" id="ipre">
-                Group Project. I created an interactive game using PixiJS, a graphics library. The game can be found on the 
+                Group Project - an interactive game using PixiJS, a graphics library. The game can be found on the 
                 project site and the code can be found on the project github.
             </p>
         </div>
@@ -72,6 +74,7 @@
 
     <div class="row">
         <div class="column left">
+            <img src="projects/KITING.png"
             <h2>Kiting <i class="trigger fa fa-plus-circle fa lg"></i></h2>
             <p class="description" id="kiting">
             A 2D evasion game where the player attempts to lead enemy kites into a giant fan which blows them up and away. 
@@ -80,6 +83,7 @@
             </p>
         </div>
         <div class="column right">
+            <img src="projects/WANDER.png" alt="wander">
             <h2>Wander <i class="trigger fa fa-plus-circle fa lg"></i></h2>
             <p class="description" id="wander">
             Project Info
@@ -89,6 +93,7 @@
 
     <div class="row">
         <div class="column left">
+            <img src="projects/FLOCKING.png" alt="flocking">
             <h2>Flocking <i class="trigger fa fa-plus-circle fa lg"></i></h2>
             <p class="description" id="flocking">
             Flocking is a cleaned up class project for IGME 202: Interactive Media Development cleaned up. The simulation 
@@ -101,6 +106,7 @@
         </div>
 
         <div class="column right">
+            <img src="projects/PIXELPAINTER.png" alt="painter">
             <h2>Pixel Painter <i class="trigger fa fa-plus-circle fa lg"></i></h2>
             <p class="description" id="painter">
             Pixel Painter is web application made with HTML/CSS/Javascript. It is a grid of pixels that can be 
@@ -117,7 +123,10 @@
 <div id="contact">
     <h1 class="time section">Contact</h1>
         <p>
-            Questions about the things I've done? Wanna get in touch? Shoot me an email or stalk me on social media!
+            Questions about the things I've done? Wanna get in touch?
+        </p>
+        <p>    
+            Shoot me an email at ekt6170@rit.edu or stalk me on social media! 
         </p>
         <p>
             <ul id="social">
@@ -128,6 +137,11 @@
             
         </p>
 </div>
+
+<footer>
+
+
+</footer>
     
 <!--script to make the top photo change colors based on the time of day -->
 <script>
@@ -135,16 +149,11 @@
     //adding onclick events for the portfolio projects
     let iconList = document.querySelectorAll(".trigger");
     let descriptionList = document.querySelectorAll(".description");
+    console.log(iconList);
 
-    let index = 0;
-
-    for(let icon of iconList){
-        icon.onclick = displayText(index);
-        index++;
-
-    }
-
-    function displayText(x){
+    function displayText(icon){
+        console.log(icon);
+        let index = Array.from(iconList).indexOf(x);
         let description = descriptionList[index];
         console.log(description);
 
@@ -157,6 +166,12 @@
             description.style.display = 'none';
         }
     }
+
+    for(let icon of iconList){
+        icon.onClick= function(){displayText(icon)};
+    }
+
+    
 
     //gets the date and time of being accessed
     let now = new Date();
