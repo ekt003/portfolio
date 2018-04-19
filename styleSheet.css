@@ -41,6 +41,10 @@ a{
     color:white;
 }
 
+#icons{
+    display:none;
+}
+
 a:hover{
     transition: 0.25s;
     color: #5b54dd;
@@ -67,8 +71,12 @@ a:active{
     color:white;
     font-size:28px;
     display: inline;
-    padding: 0px 100px;
     
+    
+}
+
+#nav li{
+    padding: 0px 100px;
 }
 
 p{
@@ -205,6 +213,30 @@ i:active{
 /*Media Queries*/
 @media (max-width: 479px) {
 
+    #nav{
+        display: none;
+    }
+
+    #icons{
+        display:block;
+        width:100%;
+    }
+
+    #icons li{
+        display: inline;
+        padding:0px 20px;
+        text-align:center;
+        margin:auto;
+
+
+    }
+
+    #icons img{
+        max-width:25px;
+        text-align:center;
+        margin: auto;
+        padding:0px;
+    }
 
     .section{
         font-size: 40px;
